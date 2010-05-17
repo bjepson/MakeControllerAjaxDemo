@@ -96,15 +96,15 @@ int HomePageHandler( char* requestType, char* address, char* requestBuffer,
   strcat( buffer, "The Make Controller is built around the AT91SAM7X256, and adds the essential components (like the crystal, voltage regulator, filter capacitors, etc.) required to run it, while bringing almost all the processor's signal lines out to standard 0.1\" spaced sockets. The software environment remains constant no matter what you plug the Make Controller into - the firmware libraries are organized and documented, making it clear which are compatible with the Controller and Application boards.</p>\r\n");
   if( !SocketWrite( socket, buffer, strlen( buffer ) ) )
     return 0 ;
+
+  buffer[0] = '\0';  
+  strcat( buffer, "Get the source for this demo: <a href=\"http://bit.ly/MCAjax\">http://bit.ly/MCAjax</a><p/>\r\n");
+  if( !SocketWrite( socket, buffer, strlen( buffer ) ) )
+    return 0 ;
  
   buffer[0] = '\0';     
   strcat( buffer, "<hr> <p style=\"font-family: verdana; font-size: 36px\">Turn the knob!</p>");
   strcat( buffer, "<div id=\"ReloadThis\" style=\"font-size: 80px; font-family: verdana; width: 40%; border-style: dotted; border-width: .1em; text-align: center;\">Waiting for data...</div>\r\n");
-  if( !SocketWrite( socket, buffer, strlen( buffer ) ) )
-    return 0 ;
-
-  buffer[0] = '\0';  
-  strcat( buffer, "Get the source for this demo: <a href=\"http://bit.ly/MCAjax\">http://bit.ly/MCAjax</a><p/>\r\n");
   if( !SocketWrite( socket, buffer, strlen( buffer ) ) )
     return 0 ;
     
