@@ -1,0 +1,28 @@
+This is a project for the Make Controller.
+
+See http://makingthings.com to download the development environment
+for the Make Controller.
+
+To use this, upload the application to your Make Controller.
+
+You'll need to connect to the Make Controller from a web browser. This
+Application uses 192.168.0.200 for the Make Controller's address. You 
+can change this in the Run() method (look for the call to 
+Network_SetAddress).
+
+Once you've set an appropriate IP address for the application,
+connected the Make Controller to your network, you should then
+connect a potentiometer to analog pin 0. 
+
+Next, open a browser on your computer (it must be connected to the same
+network that you connected the Make Controller to, and it must be on the
+same subnet), and open your browser to:
+
+http://IP_ADDRESS_OF_CONTROLLER/home
+
+For example:
+
+http://192.168.0.200/home
+
+Turn the knob, and you should see stuff happen! 
+
