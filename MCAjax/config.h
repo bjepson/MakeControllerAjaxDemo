@@ -1,7 +1,7 @@
 /*****************************************************************************************
 
   config.h
-  Generated automatically by mcbuilder - Nov 1, 2009 11:17 am
+  Generated automatically by mcbuilder - May 16, 2010 9:58 pm
   Any manual changes made to this file will be overwritten the next time mcbuilder builds.
 
 ******************************************************************************************/
@@ -13,7 +13,7 @@
 #include "error.h"
 
 #define CONTROLLER_HEAPSIZE 18000
-#define FIRMWARE_NAME "AinToWeb_public"
+#define FIRMWARE_NAME "MCAjax"
 #define FIRMWARE_MAJOR_VERSION 0
 #define FIRMWARE_MINOR_VERSION 1
 #define FIRMWARE_BUILD_NUMBER 0
